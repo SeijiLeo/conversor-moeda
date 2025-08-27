@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💸 Conversor de Moedas</h1>
+    <form id="converter-form">
+      <input type="number" id="amount" placeholder="Valor" required />
+      
+      <select id="from-currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="BRL">BRL</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="AUD">AUD</option>
+        <!-- Adicione mais moedas conforme necessário -->
+      </select>
+
+      <h3>para</h3>
+
+      <select id="to-currency">
+        <option value="BRL">BRL</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="AUD">AUD</option>
+        <!-- Adicione mais moedas conforme necessário -->
+      </select>
+
+      <button type="submit">Converter</button>
+    </form>
+
+    <div id="result">
+      <p id="converted-value">Valor convertido: </p>
+      <p id="original-value"></p>
+    </div>
+
+    <div id="loading" style="display: none;">Carregando...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
